@@ -1,0 +1,15 @@
+/Users/watcharin/Desktop/C#1/bin/Debug/net5.0/C#1.deps.json
+/Users/watcharin/Desktop/C#1/bin/Debug/net5.0/C#1.runtimeconfig.json
+/Users/watcharin/Desktop/C#1/bin/Debug/net5.0/C#1.runtimeconfig.dev.json
+/Users/watcharin/Desktop/C#1/bin/Debug/net5.0/C#1.dll
+/Users/watcharin/Desktop/C#1/bin/Debug/net5.0/ref/C#1.dll
+/Users/watcharin/Desktop/C#1/bin/Debug/net5.0/C#1.pdb
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.csproj.AssemblyReference.cache
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.AssemblyInfoInputs.cache
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.AssemblyInfo.cs
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.csproj.CoreCompileInputs.cache
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.dll
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/ref/C#1.dll
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.pdb
+/Users/watcharin/Desktop/C#1/obj/Debug/net5.0/C#1.genruntimeconfig.cache

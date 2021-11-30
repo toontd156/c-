@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/watcharin/.dotnet/store/|arch|/|tfm|",
+      "/Users/watcharin/.nuget/packages"
+    ]
+  }
+}
