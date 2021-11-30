@@ -45,6 +45,7 @@ namespace C_1
             Console.WriteLine("KUYYYYYYY");
             Console.WriteLine("Na hee");
             Console.WriteLine("pen kut rai");
+            Console.WriteLine("pen kuy rai");
         }
     }
     public class Order /// main code 
