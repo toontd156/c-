@@ -42,6 +42,7 @@ namespace C_1
                 }
                 break;
             }while(true);
+            Console.WriteLine("KUYYYYYYY");
         }
     }
     public class Order /// main code 
@@ -65,7 +66,7 @@ namespace C_1
                 Console.WriteLine("Press 1 Choose food");
                 Console.WriteLine("Press 2 Confirm Order and Del menu ");
                 Console.WriteLine("Press 3 exit");
-                Console.WriteLine("--------------------------------");
+                Console.WriteLine("---------------------");
                 Console.Write("=====Press : ");
                 int menu = Convert.ToInt32(Console.ReadLine());
 
