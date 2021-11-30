@@ -43,6 +43,7 @@ namespace C_1
                 break;
             }while(true);
             Console.WriteLine("KUYYYYYYY");
+            Console.WriteLine("Na hee");
         }
     }
     public class Order /// main code 
