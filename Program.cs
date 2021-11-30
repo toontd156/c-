@@ -5,7 +5,7 @@ namespace C_1
     class Program
     {
         static void Main(string[] args)
-        {
+        {/////เหี้ยอั้มไอสัส
             string[] food = { "DDD Fried Rice (35  baht)", "Chicken Fried Rice (30 baht)", "Beef Fried Rice (45 baht)" };
             Console.WriteLine("*********Welcome to Vincenzo Room*********");///หน้าตาหน้าแรกของโปรแกรม
             Console.WriteLine("|-------------Menu Food------------------|");
