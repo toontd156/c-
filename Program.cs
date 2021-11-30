@@ -44,6 +44,7 @@ namespace C_1
             }while(true);
             Console.WriteLine("KUYYYYYYY");
             Console.WriteLine("Na hee");
+            Console.WriteLine("pen kut rai");
         }
     }
     public class Order /// main code 
