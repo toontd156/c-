@@ -6,7 +6,7 @@ namespace C_1
     {
         static void Main(string[] args)
         {
-            string[] food = { "Fat Fried Rice (35  baht)", "Chicken Fried Rice (30 baht)", "Beef Fried Rice (45 baht)" };
+            string[] food = { "DDD Fried Rice (35  baht)", "Chicken Fried Rice (30 baht)", "Beef Fried Rice (45 baht)" };
             Console.WriteLine("*********Welcome to Vincenzo Room*********");///หน้าตาหน้าแรกของโปรแกรม
             Console.WriteLine("|-------------Menu Food------------------|");
             Console.WriteLine("|----1. {0} -----|", food[0]);////ดึงข้อมูลจากอาเรย์ของบนลงมาเพื่อแสดงรายการอาหารทั้ง 3 บรรทัด
