@@ -1,17 +1,15 @@
 ﻿using System;
-
-namespace C_1
+namespace ConsoleAppLab5Q1
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
-        {/////เหี้ยอั้มไอสัส 
-            ///กูไม่ได้เหี้ยสักหน่อยยยยย
-            string[] food = { "DDD Fried Rice (35  baht)", "Chicken Fried Rice (30 baht)", "Beef Fried Rice (45 baht)" };
+        {
+            string[] food = { "Pork Fried Rice (35  baht)", "Chicken Fried Rice (30 baht)", "Beef Fried Rice (45 baht)" };
             Console.WriteLine("*********Welcome to Vincenzo Room*********");///หน้าตาหน้าแรกของโปรแกรม
             Console.WriteLine("|-------------Menu Food------------------|");
-            Console.WriteLine("|----1. {0} -----|", food[0]);////ดึงข้อมูลจากอาเรย์ของบนลงมาเพื่อแสดงรายการอาหารทั้ง 3 บรรทัด
-            Console.WriteLine("|----2. {0} -----|", food[1]);
+            Console.WriteLine("|----1. {0} ----|", food[0]);////ดึงข้อมูลจากอาเรย์ของบนลงมาเพื่อแสดงรายการอาหารทั้ง 3 บรรทัด
+            Console.WriteLine("|----2. {0} --|", food[1]);
             Console.WriteLine("|----3. {0} -----|", food[2]);
             Console.WriteLine("|----------------------------------------|");
             Console.Write("=====What you name...  ");
@@ -42,10 +40,6 @@ namespace C_1
                 }
                 break;
             }while(true);
-            Console.WriteLine("KUYYYYYYY");
-            Console.WriteLine("Na hee");
-            Console.WriteLine("pen kut rai");
-            Console.WriteLine("pen kuy rai");
         }
     }
     public class Order /// main code 
@@ -58,19 +52,19 @@ namespace C_1
         public int o = 0;
         public int k = 0;
         public string Confirm = " ";
-        public string[] food = { "Pork Fried Rice 35  baht", "Chicken Fried Rice 30 baht", "Beef Fried Rice 45 baht" };
+        public string[] food = { "Pork Fried Rice 35  baht", "Chicken Fried Rice 30 baht", "Beef Fried Rice 45 baht" };///array เก็บรายการอาหาร
         public void List()
         {
-            int menufood1 = 35, menufood2 = 30, menufood3 = 45;
-            int[] foodSel = new int[10];
+            int menufood1 = 35, menufood2 = 30, menufood3 = 45;///ตัวแปรราคาของอาหาร
+            int[] foodSel = new int[10];///สามาสั่งได้ 3 รายการ
             while(true)
             {
-                Console.WriteLine("--------------------------------");
+                Console.WriteLine("--------------------------------");////หน้าเลือกเมนู
                 Console.WriteLine("Press 1 Choose food");
                 Console.WriteLine("Press 2 Confirm Order and Del menu ");
                 Console.WriteLine("Press 3 exit");
-                Console.WriteLine("---------------------");
-                Console.Write("=====Press : ");
+                Console.WriteLine("--------------------------------");
+                Console.Write("=====Press : ");///โปรดใส่ตัวเลข 1-3
                 int menu = Convert.ToInt32(Console.ReadLine());
 
                 if (menu == 1)///เลือกสั่งอาหาร
@@ -82,7 +76,7 @@ namespace C_1
                     {
                         if (true)
                         {
-                            Console.Write("=====Your Food Select : ", i + 1);
+                            Console.Write("=====Your Food Select : ", i + 1);///เลือกรายการและจะบวกเพิ่มตามที่เราใส่ไว้ในhowmanyfood
                             foodSel[i] = Convert.ToInt32(Console.ReadLine());
                             if (foodSel[i] == 1)
                             {
@@ -109,25 +103,16 @@ namespace C_1
                             Console.WriteLine(" \tALL Menu ");///โชว์รายการที่เลือกไปตามข้อที่ 1
                             for (ShowList = 0; ShowList < i; ShowList++)
                             {
-                                if (foodSel[ShowList] == 1)///ถ้า foodSel มีข้อมูลอยู่จริงจะบอกว่ามีอะไรบ้าง
-                                {
-                                    Console.WriteLine("1. {0} ", food[0]);
-                                }
-                                if (foodSel[ShowList] == 2)
-                                {
-                                    Console.WriteLine("2. {0} ", food[1]);
-                                }
-                                if (foodSel[ShowList] == 3)
-                                {
-                                    Console.WriteLine("3. {0} ", food[2]);
-                                }
-                            }
+                                i -= 1;
+                                Console.WriteLine(" {0} {1}", ShowList+1  , food[i] );
+                                ShowList++;
+                            }                            
                             Console.WriteLine("Cost {0} ", price);///แสดงราคาอาหาร
                             Console.Write("=====Confirm Order or Del Order Menu ( Y / D ) : ");///ต้องการสั่งอาหารหรือลบรายการอาหารทั้งหมด
                             Confirm = Convert.ToString(Console.ReadLine());
                             if (Confirm == "Y")
                             {
-                                CalculatePrice();///ถ้าเลือกข้อนี่จะถูกส่งไปที่ fun calculate
+                                CalculatePrice();///ถ้าเลือกข้อนี่จะถูกส่งไปที่ func calculate
                                 break;
                             }
                             if (Confirm == "D")
@@ -160,7 +145,7 @@ namespace C_1
                         }
                     }                    
                 }                
-                else if (menu == 3)
+                else if (menu == 3)///ถ้าเลือดข้อ 3 
                 {
                     ConTAcT contact = new ConTAcT();
                     contact.CONTACT();///ส่งการไปfun ติดต่อ
