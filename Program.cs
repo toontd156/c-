@@ -103,16 +103,25 @@ namespace ConsoleAppLab5Q1
                             Console.WriteLine(" \tALL Menu ");///โชว์รายการที่เลือกไปตามข้อที่ 1
                             for (ShowList = 0; ShowList < i; ShowList++)
                             {
-                                i -= 1;
-                                Console.WriteLine(" {0} {1}", ShowList+1  , food[i] );
-                                ShowList++;
-                            }                            
+                                if (foodSel[ShowList] == 1)///ถ้า foodSel มีข้อมูลอยู่จริงจะบอกว่ามีอะไรบ้าง
+                                {
+                                    Console.WriteLine("{0}. {1} ",ShowList+1, food[0]);
+                                }
+                                if (foodSel[ShowList] == 2)
+                                {
+                                    Console.WriteLine("{0}. {1}",ShowList+1, food[1]);
+                                }
+                                if (foodSel[ShowList] == 3)
+                                {
+                                    Console.WriteLine("{0}. {1} ",ShowList+1, food[2]);
+                                }
+                            }
                             Console.WriteLine("Cost {0} ", price);///แสดงราคาอาหาร
                             Console.Write("=====Confirm Order or Del Order Menu ( Y / D ) : ");///ต้องการสั่งอาหารหรือลบรายการอาหารทั้งหมด
-                            Confirm = Convert.ToString(Console.ReadLine());
+                            Confirm = Convert.ToString(Console.ReadLine());s
                             if (Confirm == "Y")
                             {
-                                CalculatePrice();///ถ้าเลือกข้อนี่จะถูกส่งไปที่ func calculate
+                                CalculatePrice();///ถ้าเลือกข้อนี่จะถูกส่งไปที่ fun calculate
                                 break;
                             }
                             if (Confirm == "D")
