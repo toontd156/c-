@@ -118,7 +118,7 @@ namespace ConsoleAppLab5Q1
                             }
                             Console.WriteLine("Cost {0} ", price);///แสดงราคาอาหาร
                             Console.Write("=====Confirm Order or Del Order Menu ( Y / D ) : ");///ต้องการสั่งอาหารหรือลบรายการอาหารทั้งหมด
-                            Confirm = Convert.ToString(Console.ReadLine());s
+                            Confirm = Convert.ToString(Console.ReadLine());
                             if (Confirm == "Y")
                             {
                                 CalculatePrice();///ถ้าเลือกข้อนี่จะถูกส่งไปที่ fun calculate
