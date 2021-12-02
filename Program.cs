@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ConsoleAppLab5Q1
+namespace C_
 {
     public class Program
     {
@@ -9,7 +9,7 @@ namespace ConsoleAppLab5Q1
             Console.WriteLine("*********Welcome to Vincenzo Room*********");///หน้าตาหน้าแรกของโปรแกรม
             Console.WriteLine("|-------------Menu Food------------------|");
             Console.WriteLine("|----1. {0} ----|", food[0]);////ดึงข้อมูลจากอาเรย์ของบนลงมาเพื่อแสดงรายการอาหารทั้ง 3 บรรทัด
-            Console.WriteLine("|----2. {0} --|", food[1]);
+            Console.WriteLine("|----2. {0} ----|", food[1]);
             Console.WriteLine("|----3. {0} -----|", food[2]);
             Console.WriteLine("|----------------------------------------|");
             Console.Write("=====What you name...  ");
@@ -125,9 +125,14 @@ namespace ConsoleAppLab5Q1
                                 break;
                             }
                             if (Confirm == "D")
-                            {
+                            {                                
+                                Console.WriteLine("\tDel Complete");
+                                i = 0;
+                                ShowList = 0;
                                 price = 0;
                                 List();/// ถ้าเลือกข้อนี้ List จะรีเซ็ตใหม่เหมือนเริ่มหน้าเมนูใหม่ทั้งหมด
+                                ConTAcT contact = new ConTAcT();
+                                contact.CONTACT();
                                 break;
                             }
                             else
@@ -144,8 +149,7 @@ namespace ConsoleAppLab5Q1
                     {
                         if (paid >= price)///ถ้าเงินมากกว่าถึงจะส่งไปที่ contact
                         {
-                            ConTAcT contact = new ConTAcT();
-                            contact.CONTACT();
+                            
                             break;
                         }
                         if (price > paid) ///ถ้าเงินน้อยกว่าจะให้ทำคำสั่งใหม่
