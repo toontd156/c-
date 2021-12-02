@@ -1,5 +1,5 @@
 ﻿using System;
-namespace C_
+namespace C_1
 {
     public class Program
     {
